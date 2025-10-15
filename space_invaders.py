@@ -240,7 +240,9 @@ class Game:
         self.enemies.update()
         # enemy firing
         for e in self.enemies.alive_enemies():
-            if random.random() < ENEMY_FIRE_CHANCE:
+            # make enemies fire more often each level
+            fire_chance = ENEMY_FIRE_CHANCE * (1 + (self.level - 1) * 0.2)
+            if random.random() < fire_chance:
                 self.enemy_bullets.append(
                     Bullet(
                         e.x + self.enemies.offset_x,
