@@ -281,6 +281,7 @@ class Game:
         # level complete
         if not self.enemies.alive_enemies():
             self.level += 1
+            self.player.lives += 1
             self.reset_level()
 
     def draw(self, surf):
