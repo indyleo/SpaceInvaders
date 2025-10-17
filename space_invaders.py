@@ -1,11 +1,4 @@
-#!/bin/env python
-"""
-Simple Space Invaders clone using Pygame.
-Save as space_invaders.py and run with: python3 space_invaders.py
-Requires: pygame (pip install pygame)
-Controls: Left/Right arrows or A/D to move, Space to fire, P to pause, Esc to quit
-This is a single-file implementation that uses simple shapes (no external assets).
-"""
+#!/bin/env python3
 
 import math
 import random

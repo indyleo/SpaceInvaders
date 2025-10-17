@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-"""
-Space Invaders - TUI (Text User Interface) version using curses.
-Runs in terminal, no extra dependencies.
-Controls: Left/Right arrows or A/D to move, Space to fire, Q to quit.
-"""
-
 import curses
 import random
 import time
